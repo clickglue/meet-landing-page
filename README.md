@@ -23,7 +23,7 @@ Your users should be able to:
 This was a complicated challenge in this learning path. The page looks deceptively simple, but there were a lot of challenges:
 - the first section with images overflowing a grid-area, and the dynamic reordering of all these elements. The SVG numner image. The overlay in the footer. Many challenges, but learned a lot!
 
-I estimated to be done in 4 hours, but ended up spending twice as much time.
+I estimated to be done in 4 hours, but ended up a multiple!
 
 My workflow:
 
