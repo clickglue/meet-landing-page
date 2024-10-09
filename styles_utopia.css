@@ -1,0 +1,264 @@
+/* red-hat-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/red-hat-display-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* red-hat-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/red-hat-display-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* red-hat-display-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/red-hat-display-v19-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /*Fonts*/
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+
+  /*Colors*/
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+  --color-white: #fafafa;
+
+  /*spaces, based on utopia, so not exactly in line with the sizes in the design doc*/
+  /* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,3xs-3xl&g=s,l,xl,12 */
+
+  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.6848rem + 0.3261vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3696rem + 0.6522vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.7391rem + 1.3043vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
+  --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
+
+  /*line height*/
+  --line-height: 110%;
+  --line-height-xl: 150%;
+
+  /*font-weights*/
+  --font-weight-black: 900;
+  --font-weight-normal: 500;
+}
+
+body {
+  font-family: "Red Hat Display";
+  font-size: --step-0;
+  line-height: var(--line-height);
+}
+
+/*components*/
+.button1 {
+  border-radius: var(--space-2xl);
+  border: none;
+  height: var(--space-1xl);
+  background-color: var(--color-cyan-600);
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-left: var(--space-l);
+  padding-right: var(--space-l);
+}
+.button2 {
+  border-radius: var(--space-2xl);
+  border: none;
+  height: var(--space-1xl);
+  background-color: var(--color-purple-600);
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-left: var(--space-l);
+  padding-right: var(--space-l);
+  margin: 0 auto;
+}
+.button-text-words {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-black);
+  color: var(--color-white);
+  margin: 0 auto;
+  max-width: 150px;
+}
+.button-text-version {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-black);
+  color: var(--color-cyan-300);
+}
+.number-container {
+  position: relative;
+  height: 136px;
+  width: 56px;
+}
+.number-image {
+  display: block;
+}
+.number-text {
+  position: absolute;
+  text-align: center;
+  transform: translate(100%, -200%);
+  font-weight: var(--font-weight-black);
+  color: var(--color-slate-300);
+}
+
+/*content*/
+.nav {
+  padding-top: 48px;
+  padding-right: 80px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__logo {
+  max-width: 118px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+  vertical-align: 8px;
+  justify-content: center;
+  gap: 48px;
+}
+.hero__combined {
+  display: flex;
+  flex-direction: column;
+}
+.hero__combined-image {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+.hero__combined-image-images {
+  width: 208.5;
+  height: 160px;
+}
+
+.hero__combined-content-heading {
+  color: var(--color-slate-900);
+  font-size: var(--step-5);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height);
+  text-align: center;
+}
+.hero__combined-content-text {
+  text-align: center;
+  font-size: var(--step-0);
+  line-height: var(--line-height-xl);
+  color: var(--color-slate-600);
+}
+
+.hero__combined-content-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: var(--space-s);
+  max-width: 193px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xl);
+  padding-left: var(--space-l);
+  padding-right: var(--space-l);
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-2xl);
+}
+.main-content-combined {
+  gap: var(--space-xl);
+}
+
+.main-content-combined-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+}
+.main-content-combined-image {
+  border-radius: var(--space-xs);
+}
+.main-content-combined-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+.main-content-combined-text-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+.main-content-combined-text-h1 {
+  columns: var(--color-slate-900);
+  font-weight: var(--font-weight-black);
+  font-size: var(--step-2);
+  text-align: center;
+  line-height: var(--line-height);
+}
+.main-content-combined-text-h2 {
+  color: var(--color-slate-600);
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-xl);
+  text-align: center;
+}
+.main-content-combined-text-h3 {
+  letter-spacing: 4px;
+  font-size: var(--step--2);
+  color: var(--color-cyan-600);
+  text-align: center;
+}
+
+.footer-cta {
+  background: var(--color-cyan-600);
+  height: 600px;
+}
+.footer__content{
+}
+
+
+  
+
+
+.footer-cta__number {
+}
+.footer-cta__hero {
+}
+.footer-cta__content {
+}
+.footer-cta__content-title {
+}
+.footer-cta__content-content {
+}
+.footer-cta__content-button {
+}

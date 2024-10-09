@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
+  <body>
+    <heading>
+      <img class="heading__logo" src="/assets/logo.svg" alt="Logo van Meet" />
+    </heading>
+    <section class="hero">
+      <div class="hero__images__container--left">
+        <img
+        class="hero__images__image--left"
+          src="./assets/desktop/image-hero-left.png"
+          alt="People in meeting"
+        />
+      </div>
+      <div class="hero__images__container--right">
+        <img
+          src="./assets/desktop/image-hero-right.png"
+          alt="People in meeting"
+        />
+      </div>
+      <div class="hero__combined-content">
+        <h1 class="hero__heading">Group Chat for Everyone</h1>
+        <p class="hero__content">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div class="hero__buttons">
+          <button class="button--1">
+            <span class="button__text">Download</span>
+            <span class="button__version">1.3</span>
+          </button>
+          <button class="button--2">
+            <p class="button__text">What is it?</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main-content">
+      <div class="number-container">
+        <img class="number-container__image" src="./assets/number.svg" alt="" />
+        <div class="number-container__text">01</div>
+      </div>
+      <div class="main-content__combined-images">
+        <img
+          class="main-content__combined-images__image"
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="Woman in videocall"
+        />
+        <img
+          class="main-content__combined-images__image"
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="Woman in videocall"
+        />
+        <img
+          class="main-content__combined-images__image"
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="Woman in videocall"
+        />
+        <img
+          class="main-content__combined-images__image"
+          src="./assets/desktop/image-man-texting.jpg"
+          alt="Woman in videocall"
+        />
+      </div>
+      <div class="main-content__combined-text">
+        <h3 class="main-content__combined-text__h3">Built for modern use</h3>
+        <h1 class="main-content__combined-text__h1">
+          Smarter meetings, all in one place
+        </h1>
+        <h2 class="main-content__combined-text__h2">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </h2>
+      </div>
+      <div class="number-container">
+        <img class="number-container__image" src="./assets/number.svg" alt="" />
+        <div class="number-container__text">02</div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__combined">
+        <picture>
+        <source srcset="./assets/mobile/image-footer.jpg" media="(max-width: 576px)">
+        <source srcset="./assets/tablet/image-footer.jpg" media="(min-width: 577px) and (max-width:880px)">
+        <source srcset="./assets/desktop/image-footer.jpg" media="(min-width: 880px)">
+        <img src="./assets/desktop/image-footer.jpg" alt="Woman reading">
+      </picture>
+        <div class="overlay">
+          <h1 class="footer__combined__text">Experience more together</h1>
+          <p class="footer__combined__text">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button class="button--3">
+            <span class="button__text">Download</span>
+            <span class="button__version">1.3</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

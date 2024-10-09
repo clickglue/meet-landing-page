@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Generator: imaengine 6.0   -->
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0,0,56,136" style="enable-background:new 0 0 56 136;" version="1.1">
+<defs/>
+<g id="layer0">
+<path d="M27,0L29,0L29,80L27,80L27,0Z" fill="#D1D1DF"/>
+<path d="M55,108C55,122.912 42.9117,135 28,135C13.0883,135 1,122.912 1,108C1,93.0883 13.0883,81 28,81C42.9117,81 55,93.0883 55,108Z" stroke="#D1D1DF" stroke-width="1.92921" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+</g>
+<g id="layer1">
+<path d="M53.9221,107.954C53.9221,122.314 42.2807,133.956 27.9203,133.956C13.5599,133.956 1.91853,122.314 1.91853,107.954C1.91853,93.5934 13.5599,81.952 27.9203,81.952C42.2807,81.952 53.9221,93.5934 53.9221,107.954Z" fill="#FAFAFA"/>
+</g>
+</svg>
