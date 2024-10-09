@@ -11,7 +11,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![]()
+![Screenshot](./Scherm­afbeelding%202024-10-09%20om%2011.57.45.png)
 
 ### Links
 
@@ -19,6 +19,8 @@ Your users should be able to:
 - Live Site URL: [Live site on Github Pages]()
 
 ## My process
+
+This was a complicated challenge in this learning path. 
 
 - [x] Study Figma file and design guide
 - [x] Create Git repo and connect to VSC repo
